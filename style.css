@@ -7,6 +7,7 @@
     box-sizing: border-box;
     background-color: rgb(1, 7, 39);
     color: rgb(255, 255, 255);
+    scrollbar-width: none;
 }
 
 body {
