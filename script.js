@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tasks.forEach(task => renderTasks(task))
 
+    todoInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") addTaskBtn.click();
+    })
+
     addTaskBtn.addEventListener("click", () => {
         let taskText = todoInput.value.trim()
         if (taskText === "") return;
